@@ -1,6 +1,6 @@
 import { extendTheme } from '@chakra-ui/react';
-// import { Button } from './button';
-import { Button } from './config-overwrite-test-button';
+import { Button } from './button';
+// import { Button } from './config-overwrite-test-button';
 
 const theme = extendTheme({
   components: {

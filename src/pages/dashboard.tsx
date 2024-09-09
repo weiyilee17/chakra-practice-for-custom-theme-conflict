@@ -111,14 +111,15 @@ function Dashboard() {
         </Text>
       </Button> */}
 
-      {/* <Button>
+      <Button>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim repellat aut delectus, ut veritatis fugit aliquid
         perspiciatis dignissimos? Odio excepturi ullam, hic eveniet doloribus aliquid ad culpa alias consequatur
         ducimus.
       </Button>
-      <Button>Lorem ipsum dolor 1</Button> */}
+      <Button>Lorem ipsum dolor 1</Button>
+      <Button>確認確認確認確認確認確認確認確認確認</Button>
 
-      <Button variant={'primary'}>Primary</Button>
+      {/* <Button variant={'primary'}>Primary</Button>
       <Button variant={'secondary'}>Secondary</Button>
       <Button
         variant={'primary'}
@@ -131,7 +132,7 @@ function Dashboard() {
         size={'lg'}
       >
         Secondary
-      </Button>
+      </Button> */}
       {/* <Box
         bg='white'
         h='200px'
