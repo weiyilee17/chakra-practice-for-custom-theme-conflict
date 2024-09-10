@@ -13,7 +13,7 @@ export const appRouter = createBrowserRouter([
       {
         index: true,
         element: <Dashboard />,
-        loader: tasksLoader,
+        // loader: tasksLoader,
       },
       {
         path: 'create',

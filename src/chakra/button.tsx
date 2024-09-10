@@ -1,10 +1,22 @@
-import { defineStyleConfig } from '@chakra-ui/react';
+import { defineStyle, defineStyleConfig } from '@chakra-ui/react';
 
-export const Button = defineStyleConfig({
-  baseStyle: {
+const primary = defineStyle({
+  p: 2,
+  h: 'auto',
+});
+
+const baseStyle = defineStyle(() => {
+  return {
+    // Figma base settings
+    fontFamily: 'Noto Sans TC',
+    fontSize: '16px',
+    fontStyle: 'normal',
+    fontWeight: 550,
+    lineHeight: 1.6,
+    // text wrap
     whiteSpace: 'normal',
     width: '160px',
-    height: 'auto',
+    maxH: '68px',
     display: '-webkit-box',
     WebkitLineClamp: '2',
     WebkitBoxOrient: 'vertical',
@@ -28,8 +40,14 @@ export const Button = defineStyleConfig({
     // lineHeight: '1.2', // Adjust as needed
     // // Prevent text from wrapping to the next line after ellipsis
     // maxHeight: 'calc(1.2em * 2)', // Should match the line-height
-  },
+    bg: 'blue.500',
+  };
+});
+
+export const Button = defineStyleConfig({
+  baseStyle,
+  variants: { primary },
   defaultProps: {
-    size: 'md',
+    variant: 'primary',
   },
 });

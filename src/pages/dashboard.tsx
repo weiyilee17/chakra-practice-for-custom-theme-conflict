@@ -21,14 +21,14 @@ import { tasksSchema } from '../definitions/types';
 import { EditIcon, ViewIcon } from '@chakra-ui/icons';
 
 function Dashboard() {
-  const tasks = useLoaderData();
+  // const tasks = useLoaderData();
 
-  // TODO: find out why we have to use data rather than using tasks directly
-  const { success, data } = tasksSchema.safeParse(tasks);
+  // // TODO: find out why we have to use data rather than using tasks directly
+  // const { success, data } = tasksSchema.safeParse(tasks);
 
-  if (!success) {
-    return <p>Task api format is incorrect. Please check the network connection</p>;
-  }
+  // if (!success) {
+  //   return <p>Task api format is incorrect. Please check the network connection</p>;
+  // }
 
   return (
     <SimpleGrid
@@ -84,11 +84,10 @@ function Dashboard() {
         ))} */}
 
       {/* <Button
-        whiteSpace='normal'
-        w={160}
-        // height='auto'
-        // blockSize='auto'
-        py='10px'
+      // whiteSpace='normal'
+      // w={160}
+      // height='auto'
+      // blockSize='auto'
       >
         <Text noOfLines={2}>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur a expedita odio recusandae ratione
@@ -99,7 +98,7 @@ function Dashboard() {
 
       <Button
         whiteSpace='normal'
-        w={160}
+        // w={160}
         // height='auto'
         // blockSize='auto'
         py='10px'
@@ -116,8 +115,12 @@ function Dashboard() {
         perspiciatis dignissimos? Odio excepturi ullam, hic eveniet doloribus aliquid ad culpa alias consequatur
         ducimus.
       </Button>
-      <Button>Lorem ipsum dolor 1</Button>
+      <Button>Lorem ipsum</Button>
       <Button>確認確認確認確認確認確認確認確認確認</Button>
+      <Button>確認確認確認確認確認確認確認確認確認確</Button>
+      <Button>123456789012345678901234567890</Button>
+      <Button>1234567890123456789012345678901234567890</Button>
+      <Button>Action Action Action Action Action</Button>
 
       {/* <Button variant={'primary'}>Primary</Button>
       <Button variant={'secondary'}>Secondary</Button>
